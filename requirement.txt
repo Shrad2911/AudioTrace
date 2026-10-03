@@ -1,0 +1,7 @@
+Flask
+librosa
+numpy
+matplotlib
+soundfile
+scipy
+reportlab

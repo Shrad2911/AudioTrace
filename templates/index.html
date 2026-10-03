@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AudioTrace</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>AudioTrace</h1>
+        <p>Digital Forensic Audio Analyzer</p>
+    </header>
+
+
+    <main>
+
+        <section class="upload-box">
+
+            <h2>Upload Audio Evidence</h2>
+
+            <p>
+                Upload an audio file to perform digital forensic analysis.
+            </p>
+
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+
+                <input
+                    type="file"
+                    name="audio"
+                    
+                    required
+                >
+
+                <button type="submit">
+                    ANALYZE AUDIO
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
